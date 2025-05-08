@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222222;
+  --bg-header:#fff;
+  --bg-header: linear-gradient(to bottom , white,transparent);
+  --input-box: #222;
+  --input-box-forgot-password:#2c2714;
+  --nav1-ul-li-a:#111;
+  --bg-loader:#f9f9f9;
+  --animateBlink-span:#000;
+  --text-login_form:#4d3800;
+  --text-sigup-loginBox:#4d3800;
+
+}
+
+body.dark-mode {
+  --bg-color: #000;
+  --text-color: #f9f9f9;
+  --bg-header: linear-gradient(to bottom , black,transparent);
+  --input-box: #f9f9f9;
+  --input-box-forgot-password:#d5c99e;
+  --nav1-ul-li-a:#f9f9f9;
+  --bg-loader:#000;
+  --animateBlink-span:#f9f9f9;
+  --text-login_form:#ffcc46;
+  --text-sigup-loginBox:#ffcc46;
+
+}
