@@ -1,0 +1,143 @@
+@media screen and (max-width: 768px) {
+   #menuToggle {
+      position: fixed;
+      top: .3em;
+      right: .75em;   
+      width: 2.3em;
+      height: 1em;
+      cursor: pointer;
+      z-index: 1001;
+      }
+      #menuToggle span {
+         display: block;
+         height: 26%;
+         width: 100%;
+         background: var(--c-span-menu);
+         margin: .425em 0em;
+         transition: 0.35s;
+         border-radius: 3em;
+      }
+      .navMenu {
+         background: linear-gradient(to left, rgb(108, 70, 0), transparent);
+         backdrop-filter: blur(4px);
+         box-shadow: -1.8px 0px 7px rgb(108, 70, 0);
+         position: fixed;
+         top: 0;
+         right: 0;
+         height: 100%;
+         width: 0;
+         overflow: hidden;
+         transition: width 0.35s ease;
+         z-index: 1000;
+      }
+      .navMenu ul {
+         display: grid;text-align: center;align-items: center;
+         
+         list-style: none;
+         padding: 3.333em 0px 0px 0px;
+         margin: 0em;
+      }
+      .navMenu ul li {
+         margin: .075em 0;
+         border-bottom: .09em solid rgb(108, 70, 0);
+         padding: 1em 0em;
+      }
+      .navMenu ul li a {
+         text-decoration: none;
+         color: var(--navMenu-ul-li-a);
+         font-size: 1em;
+         display: inline-block;
+      }
+      #menu-check {
+               display: none;
+      }
+      #menu-check:checked ~ nav {
+         width: 50.0%;
+      }
+      #menu-check:checked ~ nav ul {
+         opacity: 1;
+      }
+      #menu-check:checked ~ #menuToggle span:nth-child(1) {
+         transform: rotate(45deg) translate(7px, 7px);
+         }
+         #menu-check:checked ~ #menuToggle span:nth-child(2) {
+            opacity: 0;
+            }
+            #menu-check:checked ~ #menuToggle span:nth-child(3) {
+               transform: rotate(-45deg) translate(7px, -7px);
+               }
+               #loginBtn{
+                  
+                  text-decoration: none;
+               }
+               #loginButton{
+                  display: flex;
+                  text-align: center;align-items: center;align-self: center;align-content: center;
+                  padding: .5em .2em;margin: 1em 0em;
+                  border: .09em solid green;
+                  border-radius: .5em;
+                  transition: 0.6s;
+                  box-shadow: 0px 0px 60px #ffa624;
+                  -webkit-box-reflect: below 0px
+                  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+                  background: radial-gradient(circle,#ffcd42,#ffa624);
+                  }
+                  
+                  #DarkModeButton{
+                     margin: 10px 0px;
+                     direction: rtl;
+                     display: flex;
+                     position: relative;
+                     text-align: center;
+                     align-items: center;
+                     align-content: center;
+                     padding: 0em;
+                  }
+                  .toggle-container {
+                     position: relative;left: 19px;
+                     transform: translateX(-50%); /* دقیقاً وسط */
+                     padding: 0;margin: 0;
+                     width: 4em;
+                     height: 2em;
+                     background: #ECEFF1;
+                     border-radius: 30px;
+                     cursor: pointer;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     transition: background 0.4s;
+                     z-index: 1002; /* از منو جلوتر باشه */
+                  }
+                  .toggle-circle {
+                     width: 26px;
+                     height: 26px;
+                     background: rgb(224,207,97);
+                     border-radius: 50%;
+                     position: absolute;
+                     top: 2px;
+                     left: 2px;
+                     transition: 0.5s;
+                  }
+                  .toggle-container.active {
+                     background: rgb(0,39,129); /* رنگ پس‌زمینه در حالت فعال */
+                  }
+                  .toggle-container.active .toggle-circle {
+                     transform: translateX(30px); /* حرکت دایره به سمت راست */
+                     background: #fff; /* تغییر رنگ دایره */
+                  }
+                  img{
+                     width: 20px;
+                  }
+                  
+                  #loginButton:active {
+                     scale: .9;
+                     
+                  }
+                  
+                  loginButton:hover {
+                     background: rgb(2, 29, 78);
+                     background: linear-gradient(270deg,
+                     rgba(2, 29, 78, 0.681) 0%,rgba(31, 215, 232, 0.873) 60%);
+                     color: rgb(4, 4, 38);
+                     }
+                     }
