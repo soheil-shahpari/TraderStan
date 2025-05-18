@@ -1,0 +1,33 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222222;
+  --bg-header:#fff;
+  --bg-header: linear-gradient(to bottom , white,transparent);
+  --bg-siteTitle:#333;
+  --input-box: #222;
+  --input-box-forgot-password:#2c2714;
+  --navMenu-ul-li-a:#111;
+  --bg-loader:#f9f9f9;
+  --animateBlink-span:#000;
+  --text-login_form:#4d3800;
+  --text-sigup-loginBox:#4d3800;
+  --c-span-menu:#aa8d00;
+
+}
+
+body.dark-mode {
+  --bg-color: #000;
+  --text-color: #f9f9f9;
+  --bg-header: linear-gradient(to bottom , black,transparent);
+  --bg-siteTitle:#666;
+  --input-box: #f9f9f9;
+  --input-box-forgot-password:#d5c99e;
+  --navMenu-ul-li-a:#f9f9f9;
+  --bg-loader:#000;
+  --animateBlink-span:#f9f9f9;
+  --text-login_form:#ffcc46;
+  --text-sigup-loginBox:#ffcc46;
+    --c-span-menu:#ffa607;
+
+
+}

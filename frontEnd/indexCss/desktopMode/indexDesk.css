@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins";
+   box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+   body {
+      font-size: 26px;
+      font-family:"Vasir",sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.75s, color 0.15s;
+      
+   }
+   .device{
+      display: none;
+   }
+   #loader-wrapper {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 10s ease;
+   }
+   #loader-wrapper.fade-out {
+      opacity: 0;
+      pointer-events: none;
+   }
+   .container {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #000;
+      /*ckground: var(--bg-loader);*/
+      position: relative;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .container .loader {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      animation: animate .8s
+      linear infinite;
+   }
+   @keyframes animate {
+      0% {
+         transform: rotate(0deg)
+      }
+      100% {
+         transform: rotate(360deg)
+      }
+   }
+   .container .loader:nth-child(1)::before,
+   .container .loader:nth-child(2)::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to top, transparent,
+      #d39900ff);
+      background-size: 100px 180px;
+      background-repeat: no-repeat;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+   }
+   .container .loader i {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+      z-index: 100;
+      box-shadow: 0 0 10px pink,
+      0 0 20px pink,
+      0 0 30px pink,
+      0 0 40px pink,
+      0 0 50px pink,
+      0 0 60px pink,
+      0 0 70px pink,
+      0 0 80px pink,
+      0 0 90px pink,
+      0 0 100px pink;
+   }
+   .container .loader span {
+      position: absolute;
+      inset: 20px;
+      background: #000;
+      border-radius: 50%;
+      z-index: 1;
+   }
+   .grayScale{
+      color: ;
+   }
+}

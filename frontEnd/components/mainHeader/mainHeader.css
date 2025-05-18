@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+   #mainHeader {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: start;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(4px);
+      padding: 0em 0em;
+      transition: .5s;
+      width: 100%;
+      height: 3.06em;
+      z-index: 2;
+   }
+   
+   .boxShadow{
+      box-shadow: 0px 2px 4px rgb(108, 70, 0);
+   }
+   
+   #headerLogo {
+      width: auto;
+      height: 2.75em;
+      border-radius: 5em;
+      transition: .85s;
+      opacity: 1;
+   }
+   
+   #siteTitle {
+      opacity: 1;
+      background: linear-gradient(to left , #e69900,var(--bg-siteTitle));
+      -webkit-background-clip: text;  /* فقط برای متن */
+      color: transparent;  /* شفاف کردن رنگ متن */
+      transition: opacity .6s ease;
+      font-size: 1.699em;
+   }
+}
